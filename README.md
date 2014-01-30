@@ -1,5 +1,7 @@
 client methods
 
+[docs](http://documentation.hescloud.net/api/st/xsd/hes-st_xsd-submit-address_sb.html)
+
 ```js
   retrieve_recommendations: [Function],
   calculate_package_building: [Function],
