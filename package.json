@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "soap": "git@github.com:samccone/node-soap.git#master"
+  }
+}
