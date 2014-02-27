@@ -1,6 +1,7 @@
 ## Using
+* `export HES_ID = "A_MAGIC–KEY";`
 * `npm install`
-* add this to the top of index.js `var HES_ID = "A_MAGIC–KEY";`
+* `npm start`
 
 ## API
 https://developers.buildingsapi.lbl.gov/hes/documentation/HES_API_methods
