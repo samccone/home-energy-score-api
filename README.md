@@ -1,4 +1,12 @@
-client methods
+## Using
+* `npm install`
+* add this to the top of index.js `var HES_ID = "A_MAGIC–KEY";`
+
+## API
+https://developers.buildingsapi.lbl.gov/hes/documentation/HES_API_methods
+
+
+## Exposed client methods
 
 [docs](http://documentation.hescloud.net/api/st/xsd/hes-st_xsd-submit-address_sb.html)
 
