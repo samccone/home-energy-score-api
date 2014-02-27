@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "soap": "git@github.com:samccone/node-soap.git#master"
+    "soap": "~0.4.0",
+    "xml2json": "~0.4.0"
   }
 }
