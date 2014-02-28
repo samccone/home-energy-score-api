@@ -9,5 +9,27 @@
   },
   "devDependencies": {
     "coffee-script": "~1.7.1"
-  }
+  },
+  "name": "hes-score",
+  "description": "Home Energy Saver API =================== http://hes.lbl.gov/",
+  "version": "0.1.0",
+  "main": "hes/interface.coffee",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/samccone/node-hes-score.git"
+  },
+  "keywords": [
+    "home",
+    "energy",
+    "score",
+    "api",
+    "interface",
+    "US"
+  ],
+  "author": "Sam Saccone",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samccone/node-hes-score/issues"
+  },
+  "homepage": "https://github.com/samccone/node-hes-score"
 }
