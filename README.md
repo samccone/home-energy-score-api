@@ -9,8 +9,9 @@ This is a simple to use `node.js` API interface for the HES SOAP based API.
 * `npm install`
 * `npm start`
 
+## Example
 This is just a proof of concept example for how you can use this API interface.
-The basic idea is as follow
+The basic idea is as follows.
 
 ```coffee-script
 homeScore ZIPCODE, [{
@@ -19,7 +20,6 @@ homeScore ZIPCODE, [{
   s_value: '1800'
 }], (data, error) ->
   throw(error) if (error)
-
   console.log data
 ```
 
