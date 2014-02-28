@@ -1,71 +1,30 @@
+Home Energy Saver API
+===================
+http://hes.lbl.gov/
+
+This is a simple to use `node.js` API interface for the HES SOAP based API.
+
 ## Using
-* `export HES_ID = "A_MAGIC–KEY";`
+* `EXPORT HES_ID="you_key";`
 * `npm install`
 * `npm start`
 
-## API
-https://developers.buildingsapi.lbl.gov/hes/documentation/HES_API_methods
+This is just a proof of concept example for how you can use this API interface.
+The basic idea is as follow
 
+```coffee-script
+homeScore ZIPCODE, [{
+  inputTableName: 'whole_house_input',
+  inputColumnName: 'floorArea'
+  s_value: '1800'
+}], (data, error) ->
+  throw(error) if (error)
 
-## Exposed client methods
-
-[docs](http://documentation.hescloud.net/api/st/xsd/hes-st_xsd-submit-address_sb.html)
-
-```js
-  retrieve_recommendations: [Function],
-  calculate_package_building: [Function],
-  commit_results: [Function],
-  validate_inputs: [Function],
-  user_exists: [Function],
-  building_ca_id: [Function],
-  archive_buildings_by_id: [Function],
-  delete_buildings_by_id: [Function],
-  retrieve_buildings_by_id: [Function],
-  retrieve_legacy_buildings: [Function],
-  retrieve_buildings_by_address: [Function],
-  calc_energy_multi: [Function],
-  doe2sim: [Function],
-  submit_inputs: [Function],
-  submit_address: [Function],
-  retrieve: [Function],
-  calculate: [Function],
-  calculate_base_building: [Function],
-  generate_label: [Function],
-  retrieve_label_results: [Function],
-  retrieve_inputs: [Function],
-  retrieve_extended_results: [Function],
-  register_qa: [Function],
-  update_qa: [Function],
-  delete_qa: [Function],
-  login_lbl: [Function],
-  export_label_results: [Function],
-  st_api_handlerService:
-   { st_api_handlerPort:
-      { retrieve_recommendations: [Function],
-        calculate_package_building: [Function],
-        commit_results: [Function],
-        validate_inputs: [Function],
-        user_exists: [Function],
-        building_ca_id: [Function],
-        archive_buildings_by_id: [Function],
-        delete_buildings_by_id: [Function],
-        retrieve_buildings_by_id: [Function],
-        retrieve_legacy_buildings: [Function],
-        retrieve_buildings_by_address: [Function],
-        calc_energy_multi: [Function],
-        doe2sim: [Function],
-        submit_inputs: [Function],
-        submit_address: [Function],
-        retrieve: [Function],
-        calculate: [Function],
-        calculate_base_building: [Function],
-        generate_label: [Function],
-        retrieve_label_results: [Function],
-        retrieve_inputs: [Function],
-        retrieve_extended_results: [Function],
-        register_qa: [Function],
-        update_qa: [Function],
-        delete_qa: [Function],
-        login_lbl: [Function],
-        export_label_results: [Function] } } }
+  console.log data
 ```
+
+## API
+* API DOCS (tend to not be 100% correct)
+  * https://developers.buildingsapi.lbl.gov/hes/documentation/HES_API_methods
+* PHP sample code
+  *https://developers.buildingsapi.lbl.gov/hes/documentation/php-5-api-sample-code
