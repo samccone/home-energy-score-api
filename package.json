@@ -12,7 +12,7 @@
   },
   "name": "hes-score",
   "description": "Home Energy Saver API =================== http://hes.lbl.gov/",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "hes/interface.coffee",
   "repository": {
     "type": "git",
