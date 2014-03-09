@@ -3,7 +3,7 @@
     "start": "coffee index.coffee"
   },
   "dependencies": {
-    "soap": "~0.4.0",
+    "soap": "git://github.com/samccone/node-soap.git#65806e96ac3f42212b7c869ccc7a6379ac6cde7a",
     "xml2json": "~0.4.0",
     "when": "~2.8.0"
   },
